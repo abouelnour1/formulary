@@ -725,6 +725,135 @@ html[data-theme="dark"] .theme-toggle .theme-moon{opacity:1;transform:scale(1) r
 @media print{.theme-toggle{display:none!important}}
 </style>
 
+
+<style id="dark-mode-professional-fixes">
+/* ===== Professional dark-mode corrections ===== */
+html[data-theme="dark"]{
+  --bg:#0b1220!important;--surface:#111c2d!important;--border:#26364b!important;
+  --border-strong:#3a4b63!important;--text:#f3f7fc!important;--muted:#a9b7ca!important;
+  --navy:#eaf2fb!important;--navy-2:#263b55!important;--green:#4ade80!important;
+  --red:#ff4968!important;--gold:#f4c66a!important;
+}
+html[data-theme="dark"] body{background:radial-gradient(circle at 20% 0%,#15253a 0,#0b1220 34%,#080e18 100%) fixed!important;color:#f3f7fc!important}
+html[data-theme="dark"] .header-top-bg{background:rgba(13,23,38,.94)!important;backdrop-filter:blur(16px);border-bottom-color:#27374c!important}
+html[data-theme="dark"] .header{box-shadow:0 8px 28px rgba(0,0,0,.28)}
+html[data-theme="dark"] .nav-outer{background:#0b1727!important;border-bottom:1px solid #26364b}
+html[data-theme="dark"] .nav-link{color:#aebbd0!important}
+html[data-theme="dark"] .nav-link:hover{color:#fff!important;background:#17263a!important}
+html[data-theme="dark"] .nav-link.active{color:#fff!important;background:#1b2d43!important;border-bottom-color:#ff4968!important}
+html[data-theme="dark"] .breadcrumb-bar{background:#0d1726!important;border-bottom-color:#26364b!important}
+html[data-theme="dark"] .breadcrumb,html[data-theme="dark"] .breadcrumb a{color:#94a5ba!important}
+html[data-theme="dark"] .breadcrumb .current{color:#f8fbff!important}
+
+/* remove repeated oversized logo from home hero */
+.official-home-logo{display:none!important}
+.home-hero{min-height:auto!important}
+html[data-theme="dark"] .home-hero{
+ background:linear-gradient(135deg,#12243a 0%,#152c45 55%,#113b39 120%)!important;
+ border:1px solid #2a3b51!important;box-shadow:0 22px 55px rgba(0,0,0,.28)!important;
+}
+html[data-theme="dark"] .home-hero h2{color:#fff!important}
+html[data-theme="dark"] .home-hero p{color:#c3cfdd!important}
+
+/* universal cards */
+html[data-theme="dark"] .hero,html[data-theme="dark"] .panel-card,html[data-theme="dark"] .search-panel,
+html[data-theme="dark"] .drug-card,html[data-theme="dark"] .iv-card,html[data-theme="dark"] .pol-card,
+html[data-theme="dark"] .legend,html[data-theme="dark"] .dest-card{
+ background:linear-gradient(180deg,#121f31 0%,#0f1a2a 100%)!important;
+ border:1px solid #2a3a50!important;box-shadow:0 12px 30px rgba(0,0,0,.16)!important;color:#eef4fb!important;
+}
+html[data-theme="dark"] .drug-card:hover,html[data-theme="dark"] .iv-card:hover,html[data-theme="dark"] .pol-card:hover,html[data-theme="dark"] .dest-card:hover{
+ border-color:#547393!important;box-shadow:0 18px 42px rgba(0,0,0,.3)!important;
+}
+html[data-theme="dark"] .hero h2,html[data-theme="dark"] .panel-card h3,
+html[data-theme="dark"] .dc-name,html[data-theme="dark"] .iv-name,html[data-theme="dark"] .pol-title,
+html[data-theme="dark"] .dest-card h4,html[data-theme="dark"] .sec-head h3{color:#f8fbff!important}
+html[data-theme="dark"] .hero p,html[data-theme="dark"] .panel-card p,html[data-theme="dark"] .dc-sub,
+html[data-theme="dark"] .iv-trade,html[data-theme="dark"] .pol-size,html[data-theme="dark"] .dest-card p,
+html[data-theme="dark"] .rc,html[data-theme="dark"] .sec-count{color:#a9b7ca!important}
+
+/* inputs and filters */
+html[data-theme="dark"] .search-wrap input,html[data-theme="dark"] input[type="text"],html[data-theme="dark"] select{
+ background:#0b1625!important;color:#f6f9fd!important;border:1.5px solid #40526b!important;
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.025)!important
+}
+html[data-theme="dark"] input::placeholder{color:#7f91a8!important}
+html[data-theme="dark"] .search-wrap input:focus,html[data-theme="dark"] input[type="text"]:focus,html[data-theme="dark"] select:focus{
+ border-color:#6f9bc9!important;box-shadow:0 0 0 4px rgba(91,151,210,.16)!important
+}
+html[data-theme="dark"] .tbtn,html[data-theme="dark"] .ftag,html[data-theme="dark"] .vbtn{
+ background:#142238!important;color:#c5d0df!important;border-color:#3a4b63!important
+}
+html[data-theme="dark"] .tbtn.active,html[data-theme="dark"] .vbtn.active,html[data-theme="dark"] .ftag.active{
+ background:#23415f!important;color:#fff!important;border-color:#5d84ac!important
+}
+
+/* Approved and prohibited abbreviation tables */
+html[data-theme="dark"] #tab-approved .panel-card,html[data-theme="dark"] #tab-prohibited .panel-card{padding:24px!important}
+html[data-theme="dark"] #tab-approved table,html[data-theme="dark"] #tab-prohibited table{
+ width:100%!important;border-collapse:separate!important;border-spacing:0!important;background:#0d1827!important;
+ border:1px solid #2d4058!important;border-radius:14px!important;overflow:hidden!important;color:#eaf1f8!important
+}
+html[data-theme="dark"] #tab-approved thead th,html[data-theme="dark"] #tab-prohibited thead th{
+ position:sticky;top:0;z-index:2;background:#172a40!important;color:#fff!important;border-bottom:1px solid #48617d!important;
+ padding:13px 14px!important;font-size:.76rem!important;letter-spacing:.03em!important;text-align:left!important
+}
+html[data-theme="dark"] #tab-approved tbody td,html[data-theme="dark"] #tab-prohibited tbody td{
+ color:#d8e2ee!important;padding:10px 14px!important;border-bottom:1px solid #203249!important;background:#0f1b2b!important;
+ font-size:.78rem!important;line-height:1.45!important
+}
+html[data-theme="dark"] #tab-approved tbody tr:nth-child(even) td,html[data-theme="dark"] #tab-prohibited tbody tr:nth-child(even) td{background:#122033!important}
+html[data-theme="dark"] #tab-approved tbody tr:hover td,html[data-theme="dark"] #tab-prohibited tbody tr:hover td{background:#192b42!important}
+html[data-theme="dark"] #tab-approved tbody td:first-child{color:#79a9ff!important;font-weight:800!important}
+html[data-theme="dark"] #tab-prohibited tbody td:first-child{color:#ff6d80!important;font-weight:800!important}
+html[data-theme="dark"] #tab-prohibited tbody td:last-child{color:#54d58b!important;font-weight:700!important}
+html[data-theme="dark"] #tab-approved .pdf-btn,html[data-theme="dark"] #tab-prohibited .pdf-btn{
+ background:#e02f4f!important;color:#fff!important;border:1px solid #ff6c83!important;box-shadow:0 9px 22px rgba(224,47,79,.22)!important
+}
+html[data-theme="dark"] #tab-approved .pdf-btn:hover,html[data-theme="dark"] #tab-prohibited .pdf-btn:hover{background:#f13e5e!important}
+
+/* policy cards and PDF actions */
+html[data-theme="dark"] .pol-card{padding:18px!important}
+html[data-theme="dark"] .pol-ico{background:rgba(255,73,104,.13)!important;color:#ff5b78!important;border:1px solid rgba(255,91,120,.25)}
+html[data-theme="dark"] .pol-code{color:#8fa2b9!important}
+html[data-theme="dark"] .pol-btn{
+ background:#e33152!important;color:#fff!important;border:1px solid #ff7187!important;border-radius:9px!important;
+ padding:8px 14px!important;box-shadow:0 8px 18px rgba(227,49,82,.2)!important
+}
+html[data-theme="dark"] .pol-btn:hover{background:#f13d5d!important;transform:translateY(-1px)}
+
+/* IV stats and info panels */
+html[data-theme="dark"] .stat,html[data-theme="dark"] .iv-pop,html[data-theme="dark"] .sc,
+html[data-theme="dark"] .note-box,html[data-theme="dark"] .no-mono-note{
+ background:#132238!important;border-color:#31455f!important;color:#dce6f1!important
+}
+html[data-theme="dark"] .stat .n{color:#fff!important}
+html[data-theme="dark"] .stat .l{color:#ff6780!important}
+
+/* modal contrast */
+html[data-theme="dark"] .overlay{background:rgba(2,8,17,.78)!important}
+html[data-theme="dark"] .modal{background:#0f1b2b!important;border:1px solid #344861!important;box-shadow:0 35px 90px rgba(0,0,0,.58)!important}
+html[data-theme="dark"] .modal-hdr{background:linear-gradient(135deg,#172b43,#0f2034)!important}
+html[data-theme="dark"] .modal-body{color:#e9f0f8!important}
+html[data-theme="dark"] .modal-class,html[data-theme="dark"] .info-row .val,html[data-theme="dark"] .note-box,
+html[data-theme="dark"] .sc .desc{color:#b7c4d3!important}
+html[data-theme="dark"] .msec h3{color:#ff6380!important;border-bottom-color:#2f425b!important}
+html[data-theme="dark"] .ftag2,html[data-theme="dark"] .itag2,html[data-theme="dark"] .itag,
+html[data-theme="dark"] .atc-tag,html[data-theme="dark"] .bn-tag{
+ background:#18283d!important;color:#dce7f2!important;border:1px solid #354a64!important
+}
+
+/* header official logo should look clean */
+html[data-theme="dark"] .official-header-logo{background:#fff!important;border-radius:12px!important;padding:6px 10px!important;box-shadow:0 8px 24px rgba(0,0,0,.25)!important}
+html[data-theme="dark"] .header-pill{background:#10291f!important;color:#74dda5!important;border-color:#2f8c60!important}
+
+@media(max-width:820px){
+ html[data-theme="dark"] #tab-approved .panel-card,html[data-theme="dark"] #tab-prohibited .panel-card{padding:16px!important}
+ html[data-theme="dark"] #tab-approved table,html[data-theme="dark"] #tab-prohibited table{font-size:.74rem!important}
+ html[data-theme="dark"] #tab-approved tbody td,html[data-theme="dark"] #tab-prohibited tbody td{padding:9px 10px!important}
+}
+</style>
+
 </head>
 <body>
 <a class="skip-link" href="#tab-home">Skip to main content</a>
@@ -1431,7 +1560,7 @@ function filterPolicies() {
         </div>
         <div class="pol-foot">
           <span class="pol-size">${d.size}</span>
-          <a class="pol-btn" href="${d.url}" target="_blank" rel="noopener">View PDF ↗</a>
+          <a class="pol-btn" href="${d.url}" target="_blank" rel="noopener"><span aria-hidden="true">↗</span> Open PDF</a>
         </div>
       </div>`).join('');
     return `<div class="pol-cat"><div class="pol-cat-head">${POL_CATS[cat]}</div><div class="pol-grid">${cards}</div></div>`;
